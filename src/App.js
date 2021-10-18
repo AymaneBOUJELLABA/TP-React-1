@@ -1,17 +1,17 @@
-import logo from './logo.svg';
-import React, { useState } from 'react';
 import './App.css';
-
+import Count from'./Components/Count.js'
+import Formulaire from './Components/Formulaire.js'
+import Apitest from './Components/Apitest.js';
 function App()
 {
-  const [count,setCount] = useState(0);
-  
   return (
     <div className="App">
       <header className="App-header">
-        <div>
-          <button onClick={() => setCount(count+1)}>Push me</button> <span>:{count}</span>
-        </div>
+        <Count />
+
+        <Formulaire />
+
+        <Apitest />
       </header>
     </div>
   );
