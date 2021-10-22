@@ -7,15 +7,10 @@ function Count2()
 
     return (
         <div className="Count2">
-            <CountContext.Consumer>
-                {({count, setCount}) =>(<>
-                        <button onClick={() => setCount(count+1)}>
-                            Push me
-                        </button> 
-                        <span>:{count}</span>
-                    </>)}
-            </CountContext.Consumer>
-          
+            <button onClick={() => setCount(count+1)}>
+                Push me
+            </button> 
+            <span>:{count}</span>
         </div>
     );
 
