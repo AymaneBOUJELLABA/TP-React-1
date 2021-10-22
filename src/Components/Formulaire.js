@@ -26,14 +26,13 @@ class Formulaire extends React.Component
         return (
             <div className="Formulaire">
                 <form onSubmit={this.handleSubmit}>
-                    <input type="text" name="inputRef" ref={this.inputRef}/>
-                    <input type="text" name="inputRef" ref={this.inputRef2} />
-    
+                    <input type="text" placeholder="Veuiller saisir le 1er Input" name="inputRef" ref={this.inputRef}/>
+                    <input type="text" placeholder="Veuiller saisir le 2ème Input"name="inputRef" ref={this.inputRef2} />
                     <input type="submit" value="Submit" />
                 </form>
 
                 <div>
-                    {this.state.msg1} , {this.state.msg2}
+                    <b>Result : </b> {this.state.msg1} , {this.state.msg2}
                 </div>
             </div>
     
